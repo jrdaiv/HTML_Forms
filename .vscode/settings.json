@@ -1,0 +1,5 @@
+{
+    "editor.suggestOnTriggerCharacters": true,
+    "workbench.tips.enabled": true,
+    "liveServer.settings.port": 5501
+}

@@ -1,0 +1,263 @@
+
+/* used to put margin and padding for the page aka fullscreen */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* use height:110vh to make page bigger or smaller */
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(palm_trees.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+}
+
+.navbar{
+    width: 1300px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 300px;
+    float: left;
+    height: 40px;
+}
+
+.logo{
+    color: whitesmoke;
+    font-size: 35px;
+    font-family: garamond;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+
+}
+
+/* navbar settings */
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: garamond;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+/* changes white color to orange when hovering over */
+ul li a:hover{
+    color: orangered;
+}
+
+/* search bar settings */
+.search{
+    width: 310px;
+    float: right;
+    margin-left: auto;
+    background-color: transparent;
+}
+
+.srch{
+    font-family: garamond;
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    margin-top: 13px;
+    border-right: none;
+    font-size: 16px;
+    float: center;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.srch:hover{
+    background: whitesmoke;
+}
+/* button settings */
+.btn{
+    width: 200px;
+    height: 40px;
+    background: whitesmoke;
+    border: 2px solid wheat;
+    margin-top: 13px;
+    color: whitesmoke;
+    font-size: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.bttn:hover{
+    background: linear-gradient(orangered, #ff8e53);
+    box-shadow: 0 6px 8px rgba(0,0,0,1);
+    transform: translate(-2px)
+}
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+/* position: absolute will put it on the left */
+/* background makes it transparent */
+/* border radius adds rounded corners */
+.content{
+    width: 700px;
+    height: auto;
+    margin: auto;
+    color: whitesmoke;
+    position: absolute;
+    left: 1;
+    top: 10%;
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 40px;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: garamond;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+/*  */
+.content h1{
+    font-family: garamond;
+    font-size: 50px;
+    padding-left: 25px;
+    text-align: left;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    
+}
+/* use padding to make box bigger */
+/* use cursor: pointer to turn cursor to a pointer aka hand */
+.contact{
+    width: auto;
+    font-family: garamond;
+    font-size: large;
+    border-radius: 40px;
+    background: linear-gradient(whitesmoke, transparent);
+    color: whitesmoke;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* delet the underline from the button link */
+.contact a{
+    text-decoration: none;;
+
+}
+
+/* box shadow to enable shadow
+transform: translate(-2px) to pop up button when hovering  */
+.contact:hover{
+    background: linear-gradient(orangered, orangered);
+    box-shadow: 0 6px 8px rgba(0,0,0,1);
+}
+
+.form{
+    width: 300px;
+    background: rgba(0, 0, 0, 0.3);
+    /* color: whitesmoke; */
+    padding: 20px;
+    margin: auto;
+    position: absolute;
+    top: 90px;
+    left: 1450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+h2{
+    text-align: center;
+    color: whitesmoke;
+    font: garamond;
+}
+
+
+/* use font-weight to bold to make bold */
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+input{
+    background: rgba(0,0,0,0.3);
+    font-weight: bold;
+    color: black
+}
+
+input, select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    color: whitesmoke;
+    background: transparent;
+}
+
+
+fieldset{
+    background: rgba(0,0,0,0.3);
+    font-family: garamond;
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+select{
+    color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.3);
+    font-weight: bold;
+    font: garamond;
+}
+
+label, select, textarea{
+    color: whitesmoke
+}
+
+
+
+
+
+
+
